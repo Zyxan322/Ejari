@@ -1,0 +1,16 @@
+@import './styles/fonts.css';
+@import 'tailwindcss';
+@import './styles/theme.css';
+
+@layer base {
+  body { @apply bg-background text-foreground font-sans antialiased; }
+  button, a, input, select, textarea { @apply outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2; }
+  button, a { -webkit-tap-highlight-color: transparent; }
+  button:not(:disabled), select { cursor: pointer; }
+  button:disabled { cursor: not-allowed; }
+  input, select, textarea { min-width: 0; }
+  ::selection { background: #dce7ff; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}

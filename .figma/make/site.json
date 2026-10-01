@@ -1,0 +1,11 @@
+{
+  "title": "Ejari Workspace — Horizon Properties",
+  "description": "Streamline UAE real estate tenancy operations with a comprehensive platform for agencies to manage cases, documents, payments, and DLD submissions efficiently.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
